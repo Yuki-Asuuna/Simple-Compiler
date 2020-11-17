@@ -1,0 +1,21 @@
+int a=1;
+int b;
+real c= 3.14dd;// first comment
+b=a+1;
+
+#
+
+//yuki
+
+demi = .142 ;
+b=1+23333+3E+13-4;
+
+c = 2E-13;
+
+if(b == 2){//My comment
+    demi
+
+
+
+}
+//end of file

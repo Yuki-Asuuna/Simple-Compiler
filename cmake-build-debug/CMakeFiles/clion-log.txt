@@ -1,0 +1,4 @@
+C:\CMake\bin\cmake.exe -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" C:\Users\sunyh\Desktop\leetcode\compiler
+-- Configuring done
+-- Generating done
+-- Build files have been written to: C:/Users/sunyh/Desktop/leetcode/compiler/cmake-build-debug

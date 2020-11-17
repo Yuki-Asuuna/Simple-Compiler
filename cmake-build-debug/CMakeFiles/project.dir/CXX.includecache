@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/sunyh/Desktop/leetcode/compiler/LexicalAnalyzer.cpp
+LexicalAnalyzer.h
+C:/Users/sunyh/Desktop/leetcode/compiler/LexicalAnalyzer.h
+
+C:/Users/sunyh/Desktop/leetcode/compiler/LexicalAnalyzer.h
+string
+-
+vector
+-
+iostream
+-
+regex
+-
+map
+-
+
