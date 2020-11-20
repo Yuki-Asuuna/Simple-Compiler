@@ -80,6 +80,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="C:/Users/sunyh/Desktop/leetcode/compiler/GrammaticalAnalyzer.cpp">
+			<Option target="project"/>
+		</Unit>
+		<Unit filename="C:/Users/sunyh/Desktop/leetcode/compiler/GrammaticalAnalyzer.h">
+			<Option target="project"/>
+		</Unit>
 		<Unit filename="C:/Users/sunyh/Desktop/leetcode/compiler/LexicalAnalyzer.cpp">
 			<Option target="project"/>
 		</Unit>

@@ -1,6 +1,7 @@
 #include <iostream>
 #include "ReadProgram.h"
 #include "LexicalAnalyzer.h"
+#include "GrammaticalAnalyzer.h"
 
 using namespace std;
 
@@ -16,6 +17,16 @@ void Lexical(string & source) {
     }
 }
 
+void Grammatical(){
+    LLGrammaticalAnalyzer analyzer;
+    //analyzer.PrintProductionRules();
+    analyzer.CalcFIRST();
+    analyzer.PrintFIRST();
+    analyzer.CalcFOLLOW();
+    analyzer.PrintFOLLOW();
+    analyzer.CreateTABLE();
+}
+
 int main() {
     string source(ReadProgram());//source code read from file
     if (source.empty()) {//empty file or failed to open file
@@ -23,7 +34,8 @@ int main() {
     }
     //cout<<source<<endl;
 
-    Lexical(source);
+    //Lexical(source);
+    Grammatical();
 
 
     return 0;

@@ -141,6 +141,33 @@ project/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\project.dir\build.make CMakeFiles/project.dir/build
 .PHONY : project/fast
 
+GrammaticalAnalyzer.obj: GrammaticalAnalyzer.cpp.obj
+
+.PHONY : GrammaticalAnalyzer.obj
+
+# target to build an object file
+GrammaticalAnalyzer.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\project.dir\build.make CMakeFiles/project.dir/GrammaticalAnalyzer.cpp.obj
+.PHONY : GrammaticalAnalyzer.cpp.obj
+
+GrammaticalAnalyzer.i: GrammaticalAnalyzer.cpp.i
+
+.PHONY : GrammaticalAnalyzer.i
+
+# target to preprocess a source file
+GrammaticalAnalyzer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\project.dir\build.make CMakeFiles/project.dir/GrammaticalAnalyzer.cpp.i
+.PHONY : GrammaticalAnalyzer.cpp.i
+
+GrammaticalAnalyzer.s: GrammaticalAnalyzer.cpp.s
+
+.PHONY : GrammaticalAnalyzer.s
+
+# target to generate assembly for a file
+GrammaticalAnalyzer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\project.dir\build.make CMakeFiles/project.dir/GrammaticalAnalyzer.cpp.s
+.PHONY : GrammaticalAnalyzer.cpp.s
+
 LexicalAnalyzer.obj: LexicalAnalyzer.cpp.obj
 
 .PHONY : LexicalAnalyzer.obj
@@ -231,6 +258,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... project
+	@echo ... GrammaticalAnalyzer.obj
+	@echo ... GrammaticalAnalyzer.i
+	@echo ... GrammaticalAnalyzer.s
 	@echo ... LexicalAnalyzer.obj
 	@echo ... LexicalAnalyzer.i
 	@echo ... LexicalAnalyzer.s

@@ -3,4 +3,4 @@ project(project)
 
 set(CMAKE_CXX_STANDARD 11)
 
-add_executable(project main.cpp ReadProgram.cpp ReadProgram.h LexicalAnalyzer.h LexicalAnalyzer.cpp)
+add_executable(project main.cpp ReadProgram.cpp ReadProgram.h LexicalAnalyzer.h LexicalAnalyzer.cpp GrammaticalAnalyzer.h GrammaticalAnalyzer.cpp)

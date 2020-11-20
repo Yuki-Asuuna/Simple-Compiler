@@ -1,4 +1,5 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/project.dir/GrammaticalAnalyzer.cpp.obj"
   "CMakeFiles/project.dir/LexicalAnalyzer.cpp.obj"
   "CMakeFiles/project.dir/ReadProgram.cpp.obj"
   "CMakeFiles/project.dir/main.cpp.obj"
