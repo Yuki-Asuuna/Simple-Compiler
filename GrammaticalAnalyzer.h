@@ -14,7 +14,9 @@ private:
     std::set<std::string> VN;//Non-Terminal symbol
     std::map<std::string, std::set<std::string> > FIRST, FOLLOW;
     std::multimap<std::string, std::vector<std::string> > P;//production rules
-    std::string START;
+    std::string START;// Start symbol
+    std::vector < std::pair < std::string, std::vector<std::string> > > VectorP;
+    std::map <std::string, std:: map <std::string,int> > TABLE;// LL(1) TALBE
 
 public:
     LLGrammaticalAnalyzer();

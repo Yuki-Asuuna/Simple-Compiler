@@ -7,39 +7,41 @@
 LLGrammaticalAnalyzer::LLGrammaticalAnalyzer() {
 //    ID,NUM
 //
-//    VT = {"{", "}", "if", "(", ")", "then", "else", "while", ">", "<", "<=", ">=", "==", "=", ";", "ID", "NUM"};
-//    VN = {"program", "compoundstmt", "stmt", "ifstmt", "whilestmt", "assgstmt",
-//          "stmts", "boolexpr", "arithexpr", "multexpr", "arithexprprime", "simpleexpr",
-//          "multexprprime"};
-//    P.insert({"program", {"compoundstmt"}});
-//
-//    P.insert({"stmt", {"ifstmt"}});
-//    P.insert({"stmt", {"whilestmt"}});
-//    P.insert({"stmt", {"assgstmt"}});
-//    P.insert({"stmt", {"compoundstmt"}});
-//
-//    P.insert({"compoundstmt", {"{", "stmts", "}"}});
-//
-//    P.insert({"stmts", {"stmt", "stmts"}});
-//    P.insert({"stmts", {"#"}});
-//    P.insert({"ifstmt", {"if", "(", "boolexpr", ")", "then", "stmt", "else", "stmt"}});
-//    P.insert({"whilestmt", {"while", "(", "boolexpr", ")", "stmt"}});
-//    P.insert({"assgstmt", {"ID", "=", "arithexpr", ";"}});
-//    P.insert({"boolexpr", {"arithexpr", "boolop", "arithexpr"}});
-//    P.insert({"boolop", {"<"}});
-//    P.insert({"boolop", {">"}});
-//    P.insert({"boolop", {"<="}});
-//    P.insert({"boolop", {">="}});
-//    P.insert({"boolop", {"=="}});
-//    P.insert({"arithexpr", {"multexpr", "arithexprprime"}});
-//    P.insert({"arithexprprime", {"+", "multexpr", "arithexprprime"}});
-//    P.insert({"arithexprprime", {"-", "multexpr", "arithexprprime"}});
-//    P.insert({"arithexprprime", {"#"}});
-//    P.insert({"multexpr", {"simpleexpr", "multexprprime"}});
-//    P.insert({"multexprprime", {"*", "simpleexpr", "multexprprime"}});
-//    P.insert({"multexprprime", {"/", "simpleexpr", "multexprprime"}});
-//    P.insert({"multexprprime", {"#"}});
-//    P.insert({"simpleexpr", {"ID", "NUM", "(", "arithexpr", ")"}});
+    START = "program";
+    VT = {"{", "}", "if", "(", ")", "then", "else", "while", ">", "<", "<=", ">=", "==", "=", ";", "ID", "NUM", "+",
+          "-", "*", "/"};
+    VN = {"program", "compoundstmt", "stmt", "ifstmt", "whilestmt", "assgstmt",
+          "stmts", "boolexpr", "arithexpr", "multexpr", "arithexprprime", "simpleexpr",
+          "multexprprime"};
+    P.insert({"program", {"compoundstmt"}});
+
+    P.insert({"stmt", {"ifstmt"}});
+    P.insert({"stmt", {"whilestmt"}});
+    P.insert({"stmt", {"assgstmt"}});
+    P.insert({"stmt", {"compoundstmt"}});
+
+    P.insert({"compoundstmt", {"{", "stmts", "}"}});
+
+    P.insert({"stmts", {"stmt", "stmts"}});
+    P.insert({"stmts", {"#"}});
+    P.insert({"ifstmt", {"if", "(", "boolexpr", ")", "then", "stmt", "else", "stmt"}});
+    P.insert({"whilestmt", {"while", "(", "boolexpr", ")", "stmt"}});
+    P.insert({"assgstmt", {"ID", "=", "arithexpr", ";"}});
+    P.insert({"boolexpr", {"arithexpr", "boolop", "arithexpr"}});
+    P.insert({"boolop", {"<"}});
+    P.insert({"boolop", {">"}});
+    P.insert({"boolop", {"<="}});
+    P.insert({"boolop", {">="}});
+    P.insert({"boolop", {"=="}});
+    P.insert({"arithexpr", {"multexpr", "arithexprprime"}});
+    P.insert({"arithexprprime", {"+", "multexpr", "arithexprprime"}});
+    P.insert({"arithexprprime", {"-", "multexpr", "arithexprprime"}});
+    P.insert({"arithexprprime", {"#"}});
+    P.insert({"multexpr", {"simpleexpr", "multexprprime"}});
+    P.insert({"multexprprime", {"*", "simpleexpr", "multexprprime"}});
+    P.insert({"multexprprime", {"/", "simpleexpr", "multexprprime"}});
+    P.insert({"multexprprime", {"#"}});
+    P.insert({"simpleexpr", {"ID", "NUM", "(", "arithexpr", ")"}});
 
 
 
@@ -210,6 +212,49 @@ void LLGrammaticalAnalyzer::CalcFOLLOW() {
     //PrintFOLLOW();
 }
 
-void LLGrammaticalAnalyzer::CreateTABLE(){
-    
+void LLGrammaticalAnalyzer::CreateTABLE() {
+
+    //Create Vector P
+    for (auto t : P) {
+        VectorP.push_back(t);
+    }
+
+    for (int id=0;id<VectorP.size();id++) {
+        auto item=VectorP[id];
+        std::cout << id <<':' << item.first << "->";
+        for (auto i : item.second) {
+            std::cout << i << ' ';
+        }
+        std::cout << std::endl;
+    }
+
+    for (std::string nt: VN) {//A
+        bool haseps = false;
+        for (std::string alpha : FIRST[nt]) {//a
+
+            //TABLE[A,a]= production_rule
+            TABLE[nt][alpha] = 1;
+
+            if (alpha == "#") {
+                haseps = true;
+                continue;
+            }
+        }
+        if (haseps) {
+            for (std::string alpha: FOLLOW[nt]) {
+
+                //TABLE[A,a]= production_rule
+                TABLE[nt][alpha] = 1;
+
+            }
+        }
+
+    }
+    for (auto x:TABLE) {
+        std::cout << x.first << ':' ;
+        for (auto y : x.second){
+            std::cout<<y.first<<' ';
+        }
+        std::cout<<std::endl;
+    }
 }

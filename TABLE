@@ -1,0 +1,13 @@
+arithexpr:ID
+arithexprprime:# ) + - ; < <= == > >=
+assgstmt:ID
+boolexpr:ID
+compoundstmt:{
+ifstmt:if
+multexpr:ID
+multexprprime:# ) * + - / ; < <= == > >=
+program:{
+simpleexpr:ID
+stmt:ID if while {
+stmts:# ID if while { }
+whilestmt:while
