@@ -8,18 +8,18 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="C:/Users/sunyh/Desktop/leetcode/compiler/cmake-build-debug"/>
+				<Option working_dir="C:/Users/sunyh/Desktop/leetcode/Simple-Compiler/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/sunyh/Desktop/leetcode/compiler/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/sunyh/Desktop/leetcode/compiler/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/sunyh/Desktop/leetcode/compiler/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/sunyh/Desktop/leetcode/compiler/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/sunyh/Desktop/leetcode/Simple-Compiler/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/sunyh/Desktop/leetcode/Simple-Compiler/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/sunyh/Desktop/leetcode/Simple-Compiler/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/sunyh/Desktop/leetcode/Simple-Compiler/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="project">
-				<Option output="C:/Users/sunyh/Desktop/leetcode/compiler/cmake-build-debug/project.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Users/sunyh/Desktop/leetcode/compiler/cmake-build-debug"/>
+				<Option output="C:/Users/sunyh/Desktop/leetcode/Simple-Compiler/cmake-build-debug/project.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/sunyh/Desktop/leetcode/Simple-Compiler/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -32,15 +32,15 @@
 					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/sunyh/Desktop/leetcode/compiler/cmake-build-debug/Makefile&quot;  VERBOSE=1 project"/>
-					<CompileFile command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/sunyh/Desktop/leetcode/compiler/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/sunyh/Desktop/leetcode/compiler/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/sunyh/Desktop/leetcode/compiler/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/sunyh/Desktop/leetcode/Simple-Compiler/cmake-build-debug/Makefile&quot;  VERBOSE=1 project"/>
+					<CompileFile command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/sunyh/Desktop/leetcode/Simple-Compiler/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/sunyh/Desktop/leetcode/Simple-Compiler/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/sunyh/Desktop/leetcode/Simple-Compiler/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="project/fast">
-				<Option output="C:/Users/sunyh/Desktop/leetcode/compiler/cmake-build-debug/project.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Users/sunyh/Desktop/leetcode/compiler/cmake-build-debug"/>
+				<Option output="C:/Users/sunyh/Desktop/leetcode/Simple-Compiler/cmake-build-debug/project.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/sunyh/Desktop/leetcode/Simple-Compiler/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -53,55 +53,55 @@
 					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/sunyh/Desktop/leetcode/compiler/cmake-build-debug/Makefile&quot;  VERBOSE=1 project/fast"/>
-					<CompileFile command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/sunyh/Desktop/leetcode/compiler/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/sunyh/Desktop/leetcode/compiler/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/sunyh/Desktop/leetcode/compiler/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/sunyh/Desktop/leetcode/Simple-Compiler/cmake-build-debug/Makefile&quot;  VERBOSE=1 project/fast"/>
+					<CompileFile command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/sunyh/Desktop/leetcode/Simple-Compiler/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/sunyh/Desktop/leetcode/Simple-Compiler/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/sunyh/Desktop/leetcode/Simple-Compiler/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="C:/Users/sunyh/Desktop/leetcode/compiler/cmake-build-debug"/>
+				<Option working_dir="C:/Users/sunyh/Desktop/leetcode/Simple-Compiler/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/sunyh/Desktop/leetcode/compiler/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/sunyh/Desktop/leetcode/compiler/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/sunyh/Desktop/leetcode/compiler/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/sunyh/Desktop/leetcode/compiler/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/sunyh/Desktop/leetcode/Simple-Compiler/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/sunyh/Desktop/leetcode/Simple-Compiler/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/sunyh/Desktop/leetcode/Simple-Compiler/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/sunyh/Desktop/leetcode/Simple-Compiler/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="C:/Users/sunyh/Desktop/leetcode/compiler/cmake-build-debug"/>
+				<Option working_dir="C:/Users/sunyh/Desktop/leetcode/Simple-Compiler/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/sunyh/Desktop/leetcode/compiler/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/sunyh/Desktop/leetcode/compiler/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/sunyh/Desktop/leetcode/compiler/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/sunyh/Desktop/leetcode/compiler/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/sunyh/Desktop/leetcode/Simple-Compiler/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/sunyh/Desktop/leetcode/Simple-Compiler/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/sunyh/Desktop/leetcode/Simple-Compiler/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/sunyh/Desktop/leetcode/Simple-Compiler/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="C:/Users/sunyh/Desktop/leetcode/compiler/GrammaticalAnalyzer.cpp">
+		<Unit filename="C:/Users/sunyh/Desktop/leetcode/Simple-Compiler/GrammaticalAnalyzer.cpp">
 			<Option target="project"/>
 		</Unit>
-		<Unit filename="C:/Users/sunyh/Desktop/leetcode/compiler/GrammaticalAnalyzer.h">
+		<Unit filename="C:/Users/sunyh/Desktop/leetcode/Simple-Compiler/GrammaticalAnalyzer.h">
 			<Option target="project"/>
 		</Unit>
-		<Unit filename="C:/Users/sunyh/Desktop/leetcode/compiler/LexicalAnalyzer.cpp">
+		<Unit filename="C:/Users/sunyh/Desktop/leetcode/Simple-Compiler/LexicalAnalyzer.cpp">
 			<Option target="project"/>
 		</Unit>
-		<Unit filename="C:/Users/sunyh/Desktop/leetcode/compiler/LexicalAnalyzer.h">
+		<Unit filename="C:/Users/sunyh/Desktop/leetcode/Simple-Compiler/LexicalAnalyzer.h">
 			<Option target="project"/>
 		</Unit>
-		<Unit filename="C:/Users/sunyh/Desktop/leetcode/compiler/ReadProgram.cpp">
+		<Unit filename="C:/Users/sunyh/Desktop/leetcode/Simple-Compiler/ReadProgram.cpp">
 			<Option target="project"/>
 		</Unit>
-		<Unit filename="C:/Users/sunyh/Desktop/leetcode/compiler/ReadProgram.h">
+		<Unit filename="C:/Users/sunyh/Desktop/leetcode/Simple-Compiler/ReadProgram.h">
 			<Option target="project"/>
 		</Unit>
-		<Unit filename="C:/Users/sunyh/Desktop/leetcode/compiler/main.cpp">
+		<Unit filename="C:/Users/sunyh/Desktop/leetcode/Simple-Compiler/main.cpp">
 			<Option target="project"/>
 		</Unit>
-		<Unit filename="C:/Users/sunyh/Desktop/leetcode/compiler/CMakeLists.txt">
+		<Unit filename="C:/Users/sunyh/Desktop/leetcode/Simple-Compiler/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

@@ -4,10 +4,10 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "C:/Users/sunyh/Desktop/leetcode/compiler/GrammaticalAnalyzer.cpp" "C:/Users/sunyh/Desktop/leetcode/compiler/cmake-build-debug/CMakeFiles/project.dir/GrammaticalAnalyzer.cpp.obj"
-  "C:/Users/sunyh/Desktop/leetcode/compiler/LexicalAnalyzer.cpp" "C:/Users/sunyh/Desktop/leetcode/compiler/cmake-build-debug/CMakeFiles/project.dir/LexicalAnalyzer.cpp.obj"
-  "C:/Users/sunyh/Desktop/leetcode/compiler/ReadProgram.cpp" "C:/Users/sunyh/Desktop/leetcode/compiler/cmake-build-debug/CMakeFiles/project.dir/ReadProgram.cpp.obj"
-  "C:/Users/sunyh/Desktop/leetcode/compiler/main.cpp" "C:/Users/sunyh/Desktop/leetcode/compiler/cmake-build-debug/CMakeFiles/project.dir/main.cpp.obj"
+  "C:/Users/sunyh/Desktop/leetcode/Simple-Compiler/GrammaticalAnalyzer.cpp" "C:/Users/sunyh/Desktop/leetcode/Simple-Compiler/cmake-build-debug/CMakeFiles/project.dir/GrammaticalAnalyzer.cpp.obj"
+  "C:/Users/sunyh/Desktop/leetcode/Simple-Compiler/LexicalAnalyzer.cpp" "C:/Users/sunyh/Desktop/leetcode/Simple-Compiler/cmake-build-debug/CMakeFiles/project.dir/LexicalAnalyzer.cpp.obj"
+  "C:/Users/sunyh/Desktop/leetcode/Simple-Compiler/ReadProgram.cpp" "C:/Users/sunyh/Desktop/leetcode/Simple-Compiler/cmake-build-debug/CMakeFiles/project.dir/ReadProgram.cpp.obj"
+  "C:/Users/sunyh/Desktop/leetcode/Simple-Compiler/main.cpp" "C:/Users/sunyh/Desktop/leetcode/Simple-Compiler/cmake-build-debug/CMakeFiles/project.dir/main.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

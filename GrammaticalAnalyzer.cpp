@@ -41,7 +41,9 @@ LLGrammaticalAnalyzer::LLGrammaticalAnalyzer() {
     P.insert({"multexprprime", {"*", "simpleexpr", "multexprprime"}});
     P.insert({"multexprprime", {"/", "simpleexpr", "multexprprime"}});
     P.insert({"multexprprime", {"#"}});
-    P.insert({"simpleexpr", {"ID", "NUM", "(", "arithexpr", ")"}});
+    P.insert({"simpleexpr", {"ID"}});
+    P.insert({"simpleexpr", {"NUM"}});
+    P.insert({"simpleexpr", {"(","arithexpr",")"}});
 
 
 

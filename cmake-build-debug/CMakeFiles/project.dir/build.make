@@ -61,10 +61,10 @@ RM = C:\CMake\bin\cmake.exe -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\sunyh\Desktop\leetcode\compiler
+CMAKE_SOURCE_DIR = C:\Users\sunyh\Desktop\leetcode\Simple-Compiler
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\sunyh\Desktop\leetcode\compiler\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\sunyh\Desktop\leetcode\Simple-Compiler\cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/project.dir/depend.make
@@ -77,55 +77,55 @@ include CMakeFiles/project.dir/flags.make
 
 CMakeFiles/project.dir/main.cpp.obj: CMakeFiles/project.dir/flags.make
 CMakeFiles/project.dir/main.cpp.obj: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\sunyh\Desktop\leetcode\compiler\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/project.dir/main.cpp.obj"
-	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\project.dir\main.cpp.obj -c C:\Users\sunyh\Desktop\leetcode\compiler\main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\sunyh\Desktop\leetcode\Simple-Compiler\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/project.dir/main.cpp.obj"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\project.dir\main.cpp.obj -c C:\Users\sunyh\Desktop\leetcode\Simple-Compiler\main.cpp
 
 CMakeFiles/project.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/project.dir/main.cpp.i"
-	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\sunyh\Desktop\leetcode\compiler\main.cpp > CMakeFiles\project.dir\main.cpp.i
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\sunyh\Desktop\leetcode\Simple-Compiler\main.cpp > CMakeFiles\project.dir\main.cpp.i
 
 CMakeFiles/project.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/project.dir/main.cpp.s"
-	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\sunyh\Desktop\leetcode\compiler\main.cpp -o CMakeFiles\project.dir\main.cpp.s
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\sunyh\Desktop\leetcode\Simple-Compiler\main.cpp -o CMakeFiles\project.dir\main.cpp.s
 
 CMakeFiles/project.dir/ReadProgram.cpp.obj: CMakeFiles/project.dir/flags.make
 CMakeFiles/project.dir/ReadProgram.cpp.obj: ../ReadProgram.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\sunyh\Desktop\leetcode\compiler\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/project.dir/ReadProgram.cpp.obj"
-	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\project.dir\ReadProgram.cpp.obj -c C:\Users\sunyh\Desktop\leetcode\compiler\ReadProgram.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\sunyh\Desktop\leetcode\Simple-Compiler\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/project.dir/ReadProgram.cpp.obj"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\project.dir\ReadProgram.cpp.obj -c C:\Users\sunyh\Desktop\leetcode\Simple-Compiler\ReadProgram.cpp
 
 CMakeFiles/project.dir/ReadProgram.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/project.dir/ReadProgram.cpp.i"
-	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\sunyh\Desktop\leetcode\compiler\ReadProgram.cpp > CMakeFiles\project.dir\ReadProgram.cpp.i
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\sunyh\Desktop\leetcode\Simple-Compiler\ReadProgram.cpp > CMakeFiles\project.dir\ReadProgram.cpp.i
 
 CMakeFiles/project.dir/ReadProgram.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/project.dir/ReadProgram.cpp.s"
-	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\sunyh\Desktop\leetcode\compiler\ReadProgram.cpp -o CMakeFiles\project.dir\ReadProgram.cpp.s
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\sunyh\Desktop\leetcode\Simple-Compiler\ReadProgram.cpp -o CMakeFiles\project.dir\ReadProgram.cpp.s
 
 CMakeFiles/project.dir/LexicalAnalyzer.cpp.obj: CMakeFiles/project.dir/flags.make
 CMakeFiles/project.dir/LexicalAnalyzer.cpp.obj: ../LexicalAnalyzer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\sunyh\Desktop\leetcode\compiler\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/project.dir/LexicalAnalyzer.cpp.obj"
-	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\project.dir\LexicalAnalyzer.cpp.obj -c C:\Users\sunyh\Desktop\leetcode\compiler\LexicalAnalyzer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\sunyh\Desktop\leetcode\Simple-Compiler\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/project.dir/LexicalAnalyzer.cpp.obj"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\project.dir\LexicalAnalyzer.cpp.obj -c C:\Users\sunyh\Desktop\leetcode\Simple-Compiler\LexicalAnalyzer.cpp
 
 CMakeFiles/project.dir/LexicalAnalyzer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/project.dir/LexicalAnalyzer.cpp.i"
-	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\sunyh\Desktop\leetcode\compiler\LexicalAnalyzer.cpp > CMakeFiles\project.dir\LexicalAnalyzer.cpp.i
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\sunyh\Desktop\leetcode\Simple-Compiler\LexicalAnalyzer.cpp > CMakeFiles\project.dir\LexicalAnalyzer.cpp.i
 
 CMakeFiles/project.dir/LexicalAnalyzer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/project.dir/LexicalAnalyzer.cpp.s"
-	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\sunyh\Desktop\leetcode\compiler\LexicalAnalyzer.cpp -o CMakeFiles\project.dir\LexicalAnalyzer.cpp.s
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\sunyh\Desktop\leetcode\Simple-Compiler\LexicalAnalyzer.cpp -o CMakeFiles\project.dir\LexicalAnalyzer.cpp.s
 
 CMakeFiles/project.dir/GrammaticalAnalyzer.cpp.obj: CMakeFiles/project.dir/flags.make
 CMakeFiles/project.dir/GrammaticalAnalyzer.cpp.obj: ../GrammaticalAnalyzer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\sunyh\Desktop\leetcode\compiler\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/project.dir/GrammaticalAnalyzer.cpp.obj"
-	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\project.dir\GrammaticalAnalyzer.cpp.obj -c C:\Users\sunyh\Desktop\leetcode\compiler\GrammaticalAnalyzer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\sunyh\Desktop\leetcode\Simple-Compiler\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/project.dir/GrammaticalAnalyzer.cpp.obj"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\project.dir\GrammaticalAnalyzer.cpp.obj -c C:\Users\sunyh\Desktop\leetcode\Simple-Compiler\GrammaticalAnalyzer.cpp
 
 CMakeFiles/project.dir/GrammaticalAnalyzer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/project.dir/GrammaticalAnalyzer.cpp.i"
-	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\sunyh\Desktop\leetcode\compiler\GrammaticalAnalyzer.cpp > CMakeFiles\project.dir\GrammaticalAnalyzer.cpp.i
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\sunyh\Desktop\leetcode\Simple-Compiler\GrammaticalAnalyzer.cpp > CMakeFiles\project.dir\GrammaticalAnalyzer.cpp.i
 
 CMakeFiles/project.dir/GrammaticalAnalyzer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/project.dir/GrammaticalAnalyzer.cpp.s"
-	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\sunyh\Desktop\leetcode\compiler\GrammaticalAnalyzer.cpp -o CMakeFiles\project.dir\GrammaticalAnalyzer.cpp.s
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\sunyh\Desktop\leetcode\Simple-Compiler\GrammaticalAnalyzer.cpp -o CMakeFiles\project.dir\GrammaticalAnalyzer.cpp.s
 
 # Object files for target project
 project_OBJECTS = \
@@ -145,7 +145,7 @@ project.exe: CMakeFiles/project.dir/build.make
 project.exe: CMakeFiles/project.dir/linklibs.rsp
 project.exe: CMakeFiles/project.dir/objects1.rsp
 project.exe: CMakeFiles/project.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\sunyh\Desktop\leetcode\compiler\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable project.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\sunyh\Desktop\leetcode\Simple-Compiler\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable project.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\project.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -158,6 +158,6 @@ CMakeFiles/project.dir/clean:
 .PHONY : CMakeFiles/project.dir/clean
 
 CMakeFiles/project.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\sunyh\Desktop\leetcode\compiler C:\Users\sunyh\Desktop\leetcode\compiler C:\Users\sunyh\Desktop\leetcode\compiler\cmake-build-debug C:\Users\sunyh\Desktop\leetcode\compiler\cmake-build-debug C:\Users\sunyh\Desktop\leetcode\compiler\cmake-build-debug\CMakeFiles\project.dir\DependInfo.cmake --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\sunyh\Desktop\leetcode\Simple-Compiler C:\Users\sunyh\Desktop\leetcode\Simple-Compiler C:\Users\sunyh\Desktop\leetcode\Simple-Compiler\cmake-build-debug C:\Users\sunyh\Desktop\leetcode\Simple-Compiler\cmake-build-debug C:\Users\sunyh\Desktop\leetcode\Simple-Compiler\cmake-build-debug\CMakeFiles\project.dir\DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/project.dir/depend
 
