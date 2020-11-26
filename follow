@@ -2,7 +2,7 @@ FOLLOW(arithexpr):{) ; < <= == > >= }
 FOLLOW(arithexprprime):{) ; < <= == > >= }
 FOLLOW(assgstmt):{ID else if while { } }
 FOLLOW(boolexpr):{) }
-FOLLOW(boolop):{ID }
+FOLLOW(boolop):{( ID NUM }
 FOLLOW(compoundstmt):{# ID else if while { } }
 FOLLOW(ifstmt):{ID else if while { } }
 FOLLOW(multexpr):{) + - ; < <= == > >= }

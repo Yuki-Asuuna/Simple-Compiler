@@ -7,6 +7,8 @@
 #include <vector>
 #include <iostream>
 #include <algorithm>
+#include "LexicalAnalyzer.h"
+#include <stack>
 
 class LLGrammaticalAnalyzer {
 private:
@@ -28,6 +30,7 @@ public:
     void CalcFIRST();
     void CalcFOLLOW();
     void CreateTABLE();
+    void AnalyzeToken(std::vector <quadraple> &);
     int CalcFIRSTSIZE();
     int CalcFOLLOWSIZE();
 };

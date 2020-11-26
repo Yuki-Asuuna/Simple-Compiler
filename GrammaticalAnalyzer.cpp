@@ -43,7 +43,7 @@ LLGrammaticalAnalyzer::LLGrammaticalAnalyzer() {
     P.insert({"multexprprime", {"#"}});
     P.insert({"simpleexpr", {"ID"}});
     P.insert({"simpleexpr", {"NUM"}});
-    P.insert({"simpleexpr", {"(","arithexpr",")"}});
+    P.insert({"simpleexpr", {"(", "arithexpr", ")"}});
 
 
 
@@ -221,9 +221,9 @@ void LLGrammaticalAnalyzer::CreateTABLE() {
         VectorP.push_back(t);
     }
 
-    for (int id=0;id<VectorP.size();id++) {
-        auto item=VectorP[id];
-        std::cout << id <<':' << item.first << "->";
+    for (int id = 0; id < VectorP.size(); id++) {
+        auto item = VectorP[id];
+        std::cout << id << ':' << item.first << "->";
         for (auto i : item.second) {
             std::cout << i << ' ';
         }
@@ -252,11 +252,120 @@ void LLGrammaticalAnalyzer::CreateTABLE() {
         }
 
     }
-    for (auto x:TABLE) {
-        std::cout << x.first << ':' ;
-        for (auto y : x.second){
-            std::cout<<y.first<<' ';
+
+    TABLE["arithexpr"]["("] = 0;
+    TABLE["arithexpr"]["ID"] = 0;
+    TABLE["arithexpr"]["NUM"] = 0;
+
+    TABLE["arithexprprime"][")"] = 3;
+    TABLE["arithexprprime"][">"] = 3;
+    TABLE["arithexprprime"]["<"] = 3;
+    TABLE["arithexprprime"]["<="] = 3;
+    TABLE["arithexprprime"][">="] = 3;
+    TABLE["arithexprprime"]["=="] = 3;
+    TABLE["arithexprprime"][";"] = 3;
+    TABLE["arithexprprime"]["+"] = 1;
+    TABLE["arithexprprime"]["-"] = 2;
+
+    TABLE["assgstmt"]["ID"] = 4;
+
+    TABLE["boolop"][">"] = 7;
+    TABLE["boolop"]["<"] = 6;
+    TABLE["boolop"]["<="] = 8;
+    TABLE["boolop"][">="] = 9;
+    TABLE["boolop"]["=="] = 10;
+
+    TABLE["boolexpr"]["("] = 5;
+    TABLE["boolexpr"]["ID"] = 5;
+    TABLE["boolexpr"]["NUM"] = 5;
+
+    TABLE["compoundstmt"]["{"] = 11;
+
+    TABLE["ifstmt"]["if"] = 12;
+
+    TABLE["multexpr"]["("] = 13;
+    TABLE["multexpr"]["ID"] = 13;
+    TABLE["multexpr"]["NUM"] = 13;
+
+    TABLE["multexprprime"][")"] = 16;
+    TABLE["multexprprime"][">"] = 16;
+    TABLE["multexprprime"]["<"] = 16;
+    TABLE["multexprprime"][">="] = 16;
+    TABLE["multexprprime"]["<="] = 16;
+    TABLE["multexprprime"]["=="] = 16;
+    TABLE["multexprprime"][";"] = 16;
+    TABLE["multexprprime"]["+"] = 16;
+    TABLE["multexprprime"]["-"] = 16;
+    TABLE["multexprprime"]["*"] = 14;
+    TABLE["multexprprime"]["/"] = 15;
+
+    TABLE["program"]["{"] = 17;
+
+    TABLE["simpleexpr"]["("] = 20;
+    TABLE["simpleexpr"]["ID"] = 18;
+    TABLE["simpleexpr"]["NUM"] = 19;
+
+    TABLE["stmt"]["{"] = 24;
+    TABLE["stmt"]["if"] = 21;
+    TABLE["stmt"]["while"] = 22;
+    TABLE["stmt"]["ID"] = 23;
+
+    TABLE["stmts"]["{"] = 25;
+    TABLE["stmts"]["}"] = 26;
+    TABLE["stmts"]["if"] = 25;
+    TABLE["stmts"]["while"] = 25;
+    TABLE["stmts"]["ID"] = 25;
+
+    TABLE["whilestmt"]["while"] = 27;
+
+
+//    for (auto x:TABLE) {
+//        std::cout << x.first << ':' ;
+//        for (auto y : x.second){
+//            std::cout<<y.first<<' ';
+//        }
+//        std::cout<<std::endl;
+//    }
+}
+
+void LLGrammaticalAnalyzer::AnalyzeToken(std::vector<quadraple> &token) {
+    std::stack<std::string> S;
+    S.push("program");
+    for (int i = 0; i < token.size();) {
+        quadraple item = token[i];
+        if(S.empty()){
+            std::cout << "Error" <<std::endl;
+            break;
         }
-        std::cout<<std::endl;
+        std::string tp = S.top();
+        S.pop();
+        std::string stritem;
+        if (item.tokentype == "number") stritem = "NUM";
+        else if (item.tokentype == "identifier") stritem = "ID";
+        else stritem = token[i].attributevalue;
+        if (stritem == tp) {
+            ++i;
+            continue;
+        } else {
+            if(TABLE[tp].find(stritem)==TABLE[tp].end()){
+                std::cout << "error" << " " << item.linenumber << " " << item.lineposition << std::endl;
+                break;
+            }
+            int pr = TABLE[tp][stritem];
+            if (pr == -1) {
+                std::cout << "error" << " " << item.linenumber << " " << item.lineposition << std::endl;
+                break;
+            } else {
+                for (int j = VectorP[pr].second.size() - 1; j >= 0; j--) {
+                    std::string r = VectorP[pr].second[j];
+                    if (r != "#") {
+                        S.push(r);
+                    }
+                }
+            }
+        }
+    }
+    if (S.empty()) {
+        std::cout << "No Grammatical Error." << std::endl;
     }
 }

@@ -23,10 +23,10 @@ iostream
 -
 algorithm
 -
-
-C:/Users/sunyh/Desktop/leetcode/Simple-Compiler/LexicalAnalyzer.cpp
 LexicalAnalyzer.h
 C:/Users/sunyh/Desktop/leetcode/Simple-Compiler/LexicalAnalyzer.h
+stack
+-
 
 C:/Users/sunyh/Desktop/leetcode/Simple-Compiler/LexicalAnalyzer.h
 string
@@ -39,28 +39,4 @@ regex
 -
 map
 -
-
-C:/Users/sunyh/Desktop/leetcode/Simple-Compiler/ReadProgram.cpp
-ReadProgram.h
-C:/Users/sunyh/Desktop/leetcode/Simple-Compiler/ReadProgram.h
-
-C:/Users/sunyh/Desktop/leetcode/Simple-Compiler/ReadProgram.h
-cstdio
--
-string
--
-iostream
--
-fstream
--
-
-C:/Users/sunyh/Desktop/leetcode/Simple-Compiler/main.cpp
-iostream
--
-ReadProgram.h
-C:/Users/sunyh/Desktop/leetcode/Simple-Compiler/ReadProgram.h
-LexicalAnalyzer.h
-C:/Users/sunyh/Desktop/leetcode/Simple-Compiler/LexicalAnalyzer.h
-GrammaticalAnalyzer.h
-C:/Users/sunyh/Desktop/leetcode/Simple-Compiler/GrammaticalAnalyzer.h
 

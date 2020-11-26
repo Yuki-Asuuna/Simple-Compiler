@@ -13,6 +13,18 @@
   <component name="ChangeListManager">
     <list default="true" id="63f8767d-3298-4baa-8599-048a88480ae1" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GrammaticalAnalyzer.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/GrammaticalAnalyzer.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GrammaticalAnalyzer.h" beforeDir="false" afterPath="$PROJECT_DIR$/GrammaticalAnalyzer.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TABLE" beforeDir="false" afterPath="$PROJECT_DIR$/TABLE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/project.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/project.dir/CXX.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/project.dir/GrammaticalAnalyzer.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/project.dir/GrammaticalAnalyzer.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/project.dir/objects.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/project.dir/objects.a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/project.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/project.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/sample.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/sample.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/first" beforeDir="false" afterPath="$PROJECT_DIR$/first" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/follow" beforeDir="false" afterPath="$PROJECT_DIR$/follow" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/productionrule" beforeDir="false" afterPath="$PROJECT_DIR$/productionrule" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,7 +82,12 @@
       <workItem from="1605929513156" duration="2245000" />
       <workItem from="1606027380981" duration="3038000" />
       <workItem from="1606030502614" duration="635000" />
-      <workItem from="1606031187717" duration="17000" />
+      <workItem from="1606031187717" duration="60000" />
+      <workItem from="1606046954885" duration="740000" />
+      <workItem from="1606104397789" duration="11000" />
+      <workItem from="1606104425667" duration="1306000" />
+      <workItem from="1606296852568" duration="4357000" />
+      <workItem from="1606393654756" duration="3163000" />
     </task>
     <task id="LOCAL-00001" summary="11.22">
       <created>1606031017957</created>
@@ -102,42 +119,42 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="571" y="117" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1606031014040" />
-    <state width="1877" height="324" key="GridCell.Tab.0.bottom" timestamp="1606031142641">
+    <state width="1877" height="348" key="GridCell.Tab.0.bottom" timestamp="1606396846338">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="324" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1606031142641" />
-    <state width="1877" height="324" key="GridCell.Tab.0.center" timestamp="1606031142641">
+    <state width="1877" height="348" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1606396846338" />
+    <state width="1877" height="348" key="GridCell.Tab.0.center" timestamp="1606396846338">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="324" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1606031142641" />
-    <state width="1877" height="324" key="GridCell.Tab.0.left" timestamp="1606031142641">
+    <state width="1877" height="348" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1606396846338" />
+    <state width="1877" height="348" key="GridCell.Tab.0.left" timestamp="1606396846338">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="324" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1606031142641" />
-    <state width="1877" height="324" key="GridCell.Tab.0.right" timestamp="1606031142641">
+    <state width="1877" height="348" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1606396846338" />
+    <state width="1877" height="348" key="GridCell.Tab.0.right" timestamp="1606396846338">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="324" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1606031142641" />
-    <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1605939585738">
+    <state width="1877" height="348" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1606396846338" />
+    <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1606396846338">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1605939585738" />
-    <state width="1877" height="348" key="GridCell.Tab.1.center" timestamp="1605939585738">
+    <state width="1877" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1606396846338" />
+    <state width="1877" height="348" key="GridCell.Tab.1.center" timestamp="1606396846338">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1605939585738" />
-    <state width="1877" height="348" key="GridCell.Tab.1.left" timestamp="1605939585738">
+    <state width="1877" height="348" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1606396846338" />
+    <state width="1877" height="348" key="GridCell.Tab.1.left" timestamp="1606396846338">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1605939585738" />
-    <state width="1877" height="348" key="GridCell.Tab.1.right" timestamp="1605939585738">
+    <state width="1877" height="348" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1606396846338" />
+    <state width="1877" height="348" key="GridCell.Tab.1.right" timestamp="1606396846338">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1605939585738" />
-    <state x="652" y="347" key="com.intellij.ide.util.TipDialog" timestamp="1606031186772">
+    <state width="1877" height="348" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1606396846338" />
+    <state x="652" y="347" key="com.intellij.ide.util.TipDialog" timestamp="1606393683887">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="652" y="347" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1606031186772" />
+    <state x="652" y="347" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1606393683887" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>

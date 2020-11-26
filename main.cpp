@@ -1,30 +1,31 @@
 #include <iostream>
 #include "ReadProgram.h"
-#include "LexicalAnalyzer.h"
 #include "GrammaticalAnalyzer.h"
 
 using namespace std;
 
-void Lexical(string & source) {
+vector <quadraple> Lexical(string & source) {
     LexicalAnalyzer analyzer(source);
     analyzer.CutLine();
     analyzer.RemoveComment();
     analyzer.PrintLines();
     analyzer.Parse();
     auto r=analyzer.GetResult();
-    for(auto item:r){
-        cout<<'<'<<item.tokentype<<','<<item.attributevalue<<','<<item.linenumber<<','<<item.lineposition<<'>'<<endl;
-    }
+   for(auto item:r){
+      cout<<'<'<<item.tokentype<<','<<item.attributevalue<<','<<item.linenumber<<','<<item.lineposition<<'>'<<endl;
+   }
+   return r;
 }
 
-void Grammatical(){
+void Grammatical(vector <quadraple> &token){
     LLGrammaticalAnalyzer analyzer;
     //analyzer.PrintProductionRules();
     analyzer.CalcFIRST();
-    analyzer.PrintFIRST();
+    //analyzer.PrintFIRST();
     analyzer.CalcFOLLOW();
-    analyzer.PrintFOLLOW();
+    //analyzer.PrintFOLLOW();
     analyzer.CreateTABLE();
+    analyzer.AnalyzeToken(token);
 }
 
 int main() {
@@ -34,8 +35,8 @@ int main() {
     }
     //cout<<source<<endl;
 
-    //Lexical(source);
-    Grammatical();
+    vector <quadraple> token=Lexical(source);
+    Grammatical(token);
 
 
     return 0;

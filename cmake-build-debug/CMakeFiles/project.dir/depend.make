@@ -3,6 +3,7 @@
 
 CMakeFiles/project.dir/GrammaticalAnalyzer.cpp.obj: ../GrammaticalAnalyzer.cpp
 CMakeFiles/project.dir/GrammaticalAnalyzer.cpp.obj: ../GrammaticalAnalyzer.h
+CMakeFiles/project.dir/GrammaticalAnalyzer.cpp.obj: ../LexicalAnalyzer.h
 
 CMakeFiles/project.dir/LexicalAnalyzer.cpp.obj: ../LexicalAnalyzer.cpp
 CMakeFiles/project.dir/LexicalAnalyzer.cpp.obj: ../LexicalAnalyzer.h

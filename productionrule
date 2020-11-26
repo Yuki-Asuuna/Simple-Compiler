@@ -16,11 +16,13 @@
 15:multexprprime->/ simpleexpr multexprprime
 16:multexprprime->#
 17:program->compoundstmt
-18:simpleexpr->ID NUM ( arithexpr )
-19:stmt->ifstmt
-20:stmt->whilestmt
-21:stmt->assgstmt
-22:stmt->compoundstmt
-23:stmts->stmt stmts
-24:stmts->#
-25:whilestmt->while ( boolexpr ) stmt
+18:simpleexpr->ID
+19:simpleexpr->NUM
+20:simpleexpr->( arithexpr )
+21:stmt->ifstmt
+22:stmt->whilestmt
+23:stmt->assgstmt
+24:stmt->compoundstmt
+25:stmts->stmt stmts
+26:stmts->#
+27:whilestmt->while ( boolexpr ) stmt

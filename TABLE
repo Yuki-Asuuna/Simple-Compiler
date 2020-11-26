@@ -1,13 +1,13 @@
-arithexpr:ID
+arithexpr:( ID NUM
 arithexprprime:# ) + - ; < <= == > >=
 assgstmt:ID
-boolexpr:ID
+boolexpr:( ID NUM
 compoundstmt:{
 ifstmt:if
-multexpr:ID
+multexpr:( ID NUM
 multexprprime:# ) * + - / ; < <= == > >=
 program:{
-simpleexpr:ID
+simpleexpr:( ID NUM
 stmt:ID if while {
 stmts:# ID if while { }
 whilestmt:while
